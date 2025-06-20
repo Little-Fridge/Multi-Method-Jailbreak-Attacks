@@ -1,0 +1,28 @@
+# 基础环境（Python 3.10 推荐）
+torch==2.1.2               # 建议与你的 CUDA 驱动适配版本相同
+transformers==4.37.2       # 兼容 LLaVA-1.5、Qwen、ChatGLM3
+sentencepiece==0.1.99      # 绝大多数中文模型/llama家族必备
+tokenizers==0.15.0
+accelerate==0.24.1
+peft==0.8.2
+scipy==1.10.1
+numpy==1.24.4
+
+# 量化与大模型优化加载
+bitsandbytes==0.41.3
+
+# 常规工具
+tqdm==4.66.2
+loguru==0.7.2
+
+# 有些 LLaVA 依赖图片处理（如果你需要 image 功能，附加下面）
+# pillow==10.2.0
+# torchvision==0.16.2
+
+# ChatGLM3 必备
+cpm_kernels==1.0.11
+protobuf==3.20.3
+
+# 如果实验包含 OpenAI api/代理对比
+# openai==1.30.5
+# requests==2.31.0
