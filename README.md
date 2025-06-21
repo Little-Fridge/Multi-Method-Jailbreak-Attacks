@@ -92,5 +92,5 @@ GCG_ChatGlm.py \
  
 
 - **图 2**：GCG 算法参数敏感度折线图  
-  ![GCG 参数折线](Figures/)
+  ![GCG 参数折线](Figures/fig_all_combined.png)
 
