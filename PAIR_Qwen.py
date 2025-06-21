@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-# run_pair_llava2qwen.py
-# PAIR算法自动攻击：攻击者LLaVA-1.5-7B，目标Qwen1.5-7B-Chat，严格判定
-
 import sys, types, importlib.machinery
 import argparse, json, time, random, torch
 from transformers import AutoTokenizer, BitsAndBytesConfig, AutoModelForCausalLM
