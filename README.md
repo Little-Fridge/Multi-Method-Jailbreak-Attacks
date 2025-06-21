@@ -1,4 +1,4 @@
-# Multi-Method-Jailbreak-Attacks<img src="Figures/大模型.svg" alt="icon" width="5" height="5" />
+# Multi-Method-Jailbreak-Attacks <img src="Figures/大模型.svg" alt="icon" width="35" height="35" />
 
 
 
@@ -42,5 +42,28 @@
 
 1. 克隆仓库并进入目录：
    ```bash
-   git clone https://github.com/yourname/Multi-Method-Jailbreak-Attacks.git
+   git clone https://github.com/Little-Fridge/Multi-Method-Jailbreak-Attacks.git
    cd Multi-Method-Jailbreak-Attacks
+   ```
+   
+2. 创建环境
+  ```bash
+  conda create -n exp python=3.10
+  conda activate exp
+  ```
+3. 下载项目依赖
+ ```bash
+ pip install -r requirements.txt
+```
+4.在huggingface上下载相关模型权重，并拥有GPT系列相关的api密钥
+
+5.测试demo——提示工程
+```bash
+python prompt_knowledge.py \
+  -i data/prompts.jsonl \
+  -o knowledge_results.jsonl \
+  -m your model path
+```
+6.测试demo——PAIR
+7.测试demo——GCG
+
