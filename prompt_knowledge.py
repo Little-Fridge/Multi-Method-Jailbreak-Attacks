@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# run_prompt_knowledge16.py
-# 对 16 条典型场景 prompt，使用 9 种提示模板测试，并输出 9×8=72 项准确率
-# 修正版：避免多卡切分，确保所有张量都在同一 GPU (cuda:0)
-
 import argparse
 import json
 import time
