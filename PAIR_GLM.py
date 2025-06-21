@@ -1,12 +1,6 @@
-#!/usr/bin/env python3
-# run_pair_llava2chatglm3.py
-# PAIR算法自动攻击：攻击者LLaVA-1.5-7B，目标ChatGLM3-6B，严格判定，ChatGLM只用chat方法！
-
 import sys, os
 import argparse, json, time, random, torch
 
-# ====== 让Python能import到你的llava模型分支文件 ======
-# 如果脚本和modeling_llava.py不在同一目录，必须加PYTHONPATH
 llava_src_dir = '/share/project/test/backup/arc/ppx/llava-1.5-7b-hf'
 if llava_src_dir not in sys.path:
     sys.path.insert(0, llava_src_dir)
@@ -73,7 +67,6 @@ def main():
         args.atk_model, quantization_config=bnb, trust_remote_code=True
     ).eval()
 
-    # 加载ChatGLM3-6B目标模型（官方chat方法！）
     print("加载目标模型(ChatGLM3-6B):", args.tgt_model)
     tokT = AutoTokenizer.from_pretrained(args.tgt_model, trust_remote_code=True)
     tgt = AutoModel.from_pretrained(
