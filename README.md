@@ -1,4 +1,5 @@
-# Multi-Method-Jailbreak-Attacks![icon](Figures/大模型.svg){width=5 height=5}
+# Multi-Method-Jailbreak-Attacks<img src="Figures/大模型.svg" alt="icon" width="5" height="5" />
+
 
 
 > 本项目是“网络信息与安全”课程的实验课题，旨在系统化评估大语言模型的越狱攻击与防御。
