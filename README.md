@@ -85,3 +85,12 @@ GCG_ChatGlm.py \
 --save_json GCG.json \
 ```
 
+## 示例结果
+- **图 1**：九种提示模板在八大场景下进行提示工程越狱的柱状图 
+  ![柱状图](Figures/bar.png)
+
+ 
+
+- **图 2**：GCG 算法参数敏感度折线图  
+  ![GCG 参数折线](Figures/)
+
