@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-# run_pair_llava_strict.py
-# PAIR算法自动攻击/迁移，含内容敏感性判别、全局统计
-
 import sys, types, importlib.machinery
 import argparse, json, time, random, torch
 from transformers import AutoTokenizer, BitsAndBytesConfig
