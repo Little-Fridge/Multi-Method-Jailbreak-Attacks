@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# run_pair_llava2baichuan2.py
-
 import sys, types, importlib.machinery
 import argparse, json, time, random, torch
 from transformers import AutoTokenizer, BitsAndBytesConfig, AutoModelForCausalLM
