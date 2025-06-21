@@ -62,8 +62,26 @@
 python prompt_knowledge.py \
   -i data/prompts.jsonl \
   -o knowledge_results.jsonl \
-  -m your model path
+  -m /path/to/your_model \
 ```
 6.测试demo——PAIR
+```bash
+python PAIR_LLaVA.py \
+  --input data/prompts.jsonl \
+  --output pair_llava16_results.jsonl \
+  --atk_model /path/to/your_attack_model \
+  --tgt_model /path/to/your_target_model \
+  --max_iter 12 \
+```
 7.测试demo——GCG
+
+由于GCG速度过慢，若有条件可以考虑分布式训练
+```bash
+torchrun \
+--nproc_per_node=8 \
+GCG_ChatGlm.py \
+--model_path /path/to/your_model \
+--prompts_file data/prompts.jsonl \ 
+--save_json GCG.json \
+```
 
